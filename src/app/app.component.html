@@ -1,4 +1,5 @@
 <app-navigation></app-navigation>
+
 <div class="container">
   <div class="row">
     <div class="col text-center">
@@ -6,7 +7,23 @@
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-md-4">
+    <div class="col">
+      <h2>Default Loader</h2>
+      <p>This is the how the loader shows up based on the default config provided in the
+        <code>forRoot</code> method in the
+        <code>app.module</code> file.
+      </p>
+      <ngx-loader></ngx-loader>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col">
+      <h2>Dynamically Changed</h2>
+      <p>This is how you can change the color and type of the spinner if you need something other than the default.</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col">
       <select #spinnerTypeSelect name="spinnerTypeSelect" id="spinner-type-select" class="custom-select" (change)="setSpinnerType(spinnerTypeSelect.value)">
         <option value="rotating-square">Rotating Square</option>
         <option value="rotating-dots">Rotating Dots</option>
@@ -17,6 +34,8 @@
         <option value="ellipsis">Ellipsis</option>
         <option value="cube-grid">Cube Grid</option>
       </select>
+    </div>
+    <div class="col">
       <select #spinnerColorSelect name="spinnerColorSelect" id="spinner-type-select" class="custom-select" (change)="setSpinnerType(spinnerColorSelect.value)">
         <option value="black">Black</option>
         <option value="red">Red</option>

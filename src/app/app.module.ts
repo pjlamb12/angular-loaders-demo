@@ -7,7 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
 	declarations: [AppComponent, NavigationComponent],
-	imports: [BrowserModule, NgLoadersModule],
+	imports: [BrowserModule, NgLoadersModule.forRoot({ color: 'red', type: 'pulsing-circles' })],
 	providers: [],
 	bootstrap: [AppComponent],
 })
