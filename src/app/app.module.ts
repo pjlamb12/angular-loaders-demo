@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgLoadersModule } from 'ng-loaders';
+import { NgLoadersModule, NgLoadersTypes } from 'ng-loaders';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
 	declarations: [AppComponent, NavigationComponent],
-	imports: [BrowserModule, NgLoadersModule.forRoot({ color: 'red', type: 'pulsing-circles' })],
+	imports: [BrowserModule, NgLoadersModule.forRoot({ color: 'red', type: NgLoadersTypes.PULSING_CIRCLES })],
 	providers: [],
 	bootstrap: [AppComponent],
 })

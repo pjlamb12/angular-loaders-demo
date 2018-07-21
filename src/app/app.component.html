@@ -13,7 +13,17 @@
         <code>forRoot</code> method in the
         <code>app.module</code> file.
       </p>
+      <br />
+      <br />
       <ngx-loader></ngx-loader>
+      <br />
+      <br />
+      <p>
+        The following is how the loader will show up if you choose to have it cover the entirety of its parent container:
+      </p>
+      <div class="test-container">
+        <ngx-loader [coverContainer]="true"></ngx-loader>
+      </div>
     </div>
   </div>
   <div class="row justify-content-center">
@@ -47,8 +57,12 @@
   </div>
   <div class="row">
     <div class="col">
+      <br />
+      <br />
       <ngx-loader [spinnerType]="spinnerTypeSelect.value" [spinnerColor]="spinnerColorSelect.value">
       </ngx-loader>
+      <br />
+      <br />
     </div>
   </div>
 </div>
